@@ -1,0 +1,29 @@
+@import 'partial/variable';
+@import 'partial/mixin';
+
+.language {
+  position: fixed;
+  top: 1rem;
+  inset-inline-end: 2.25rem;
+  z-index: 1;
+
+  a {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $white_color;
+    background-color: $secondary_color;
+    border-radius: 50%;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    outline-offset: 4px;
+    outline: 2px solid $secondary_color;
+    @include transition;
+    text-transform: capitalize;
+
+    &:hover {
+      outline-offset: 0;
+    }
+  }
+}
